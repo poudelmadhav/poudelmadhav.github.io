@@ -1,3 +1,11 @@
+::-webkit-scrollbar {
+display: none;
+}
+
+::-moz-scrollbar {
+	display: none;
+}
+
 .dp:hover {
 	color: #be004f;
 }
@@ -12,13 +20,16 @@
 
 .thank {
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 13%;
 	font-size: 25px;
+	margin-bottom: 5%;
 }
 
 .prof-pic {
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+	-o-border-radius: 50%;
+	width: 20%;
+	height: 20%;
+	padding: 2%;
 	cursor: pointer;
 }
