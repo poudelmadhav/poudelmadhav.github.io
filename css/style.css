@@ -55,3 +55,9 @@ display: none;
 	padding: 2%;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 767px){
+	.prof-pic {
+		padding: 0%;
+	}
+}
