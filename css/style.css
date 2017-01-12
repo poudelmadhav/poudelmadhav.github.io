@@ -1,9 +1,32 @@
+/*scroll bar hide css*/
 ::-webkit-scrollbar {
 display: none;
 }
 
 ::-moz-scrollbar {
 	display: none;
+}
+
+/*social icons hovering color change css*/
+
+.fb:hover {
+	color: #3b5998;
+}
+
+.tw:hover {
+	color: #1da1f2;
+}
+
+.gp:hover {
+	color: #db4437;
+}
+
+.lk:hover {
+	color: #1883bb;
+}
+
+.ig:hover {
+	color: #e02d71;
 }
 
 .dp:hover {
@@ -14,10 +37,8 @@ display: none;
 	color: #00aff0;
 }
 
-.ig:hover {
-	color: #a734b3;
-}
 
+/*thank you page css*/
 .thank {
 	text-align: center;
 	margin-top: 13%;
@@ -25,6 +46,7 @@ display: none;
 	margin-bottom: 5%;
 }
 
+/*profile picture on main page css*/
 .prof-pic {
 	border-radius: 50%;
 	-o-border-radius: 50%;
