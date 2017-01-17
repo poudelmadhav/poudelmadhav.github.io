@@ -73,3 +73,19 @@ display: none;
 .navigation {
 	background: #191919;
 }
+
+/*404 error page*/
+.error {
+	text-align: center;
+	font-size: 25px;
+	margin-top: 6%;
+}
+
+.error h1 {
+	font-size: 200px;
+}
+
+.error .first {
+	margin-top: 7%;
+}
+
