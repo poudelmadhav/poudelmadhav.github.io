@@ -74,6 +74,11 @@ display: none;
 	background: #191919;
 }
 
+/*background of navigation bar permission denied page added*/
+.navg {
+	background: #0F0F0F;
+}
+
 /*404 error page*/
 .error {
 	text-align: center;
