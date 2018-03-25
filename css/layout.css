@@ -333,6 +333,12 @@ ul#nav li.current a { color: #F06000; }
   -webkit-animation: photoshop 2s ease;
 }
 
+.javascript {
+  width: 50%;
+  -moz-animation: photoshop 2s ease;
+  -webkit-animation: photoshop 2s ease;
+}
+
 .photoshop {
   	width: 60%;
   	-moz-animation: photoshop 2s ease;
