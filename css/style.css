@@ -17,6 +17,10 @@ display: none;
 	color: #1da1f2;
 }
 
+.git:hover {
+	color: #1f252a;
+}
+
 .gp:hover {
 	color: #db4437;
 }
