@@ -101,3 +101,7 @@ display: none;
 .wrapper {
 	 margin-top: 65px;
 }
+
+iframe#embedded-badge-ff7f7f93-22e8-4add-bc68-52ef207531a5 {
+	background: #f39f49;
+}
