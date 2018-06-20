@@ -101,3 +101,9 @@ display: none;
 .wrapper {
 	 margin-top: 65px;
 }
+
+/* Networking fundamental badge color */
+
+#badge-name {
+    color: #7A7A7A !important;
+}
