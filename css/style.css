@@ -101,9 +101,3 @@ display: none;
 .wrapper {
 	 margin-top: 65px;
 }
-
-/* Networking fundamental badge color */
-
-.mta-badge {
-    background: orange;
-}
