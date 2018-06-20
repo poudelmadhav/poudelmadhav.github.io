@@ -104,6 +104,6 @@ display: none;
 
 /* Networking fundamental badge color */
 
-#badge-name {
-    color: #7A7A7A !important;
+.mta-badge {
+    background: orange;
 }
