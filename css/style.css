@@ -64,6 +64,10 @@ display: none;
 	.prof-pic {
 		padding: 0%;
 	}
+
+	.error h1 {
+		font-size: 70px !important;
+	}
 }
 
 /*location map*/
