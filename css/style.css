@@ -1,12 +1,3 @@
-/*scroll bar hide css*/
-::-webkit-scrollbar {
-display: none;
-}
-
-::-moz-scrollbar {
-	display: none;
-}
-
 /*social icons hovering color change css*/
 
 .fb:hover {
