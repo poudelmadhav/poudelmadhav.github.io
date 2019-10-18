@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/* main css for zoom starts */
 .img-hover-zoom {
   height: 300px; /* [1.1] Set it as per your need */
   width: 300px;
@@ -21,6 +22,15 @@
 .img-hover-zoom:hover img {
   transform: scale(1.5);
 }
+/* main css for zoom starts ends */
+
+/* extra css for better look in this page only */
+.img-hover-zoom {
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -28,6 +38,7 @@
 <div class="img-hover-zoom">
   <img src="images/profilepic.jpg" alt="This zooms-in really well and smooth">
 </div>
+<p>Hover on the image to see the effect</p>
 
 </body>
 </html>
