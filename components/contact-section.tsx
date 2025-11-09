@@ -116,7 +116,7 @@ export default function ContactSection() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="John Doe"
+                        placeholder="Ram Prasad Sharma"
                         required
                         className="bg-background border-border focus:border-primary transition-colors"
                       />
@@ -131,7 +131,7 @@ export default function ContactSection() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="john@example.com"
+                        placeholder="ram.sharma@example.com"
                         required
                         className="bg-background border-border focus:border-primary transition-colors"
                       />
