@@ -45,7 +45,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 onClick={scrollToAbout}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-2 sm:py-3 pulse-on-hover w-full sm:w-auto text-sm sm:text-base"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-2 sm:py-3 pulse-on-hover w-full sm:w-auto text-sm sm:text-base cursor-pointer"
               >
                 Explore My Work
               </Button>

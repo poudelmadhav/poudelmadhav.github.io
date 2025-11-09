@@ -1,22 +1,17 @@
 "use client"
 
-import type React from "react"
-
 import { useEffect, useRef, useState } from "react"
+import { useForm, ValidationError } from "@formspree/react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, Github, CheckCircle } from "lucide-react"
 
 export default function ContactSection() {
   const [isVisible, setIsVisible] = useState(false)
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
   const sectionRef = useRef<HTMLElement>(null)
+  const [state, handleSubmit] = useForm("xkgkwqaw")
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,21 +29,6 @@ export default function ContactSection() {
 
     return () => observer.disconnect()
   }, [])
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", message: "" })
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
 
   return (
     <section id="contact" ref={sectionRef} className="py-20 px-4 bg-muted/30">
@@ -109,47 +89,61 @@ export default function ContactSection() {
                 <CardTitle className="text-2xl text-card-foreground">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <Input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="bg-input border-border"
-                    />
+                {state.succeeded ? (
+                  <div className="flex flex-col items-center justify-center py-8 space-y-4">
+                    <CheckCircle className="h-16 w-16 text-green-500" />
+                    <h3 className="text-xl font-semibold text-card-foreground">Message Sent!</h3>
+                    <p className="text-muted-foreground text-center">
+                      Thank you for reaching out. I'll get back to you soon!
+                    </p>
                   </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div>
+                      <Input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                        className="bg-input border-border"
+                      />
+                      <ValidationError prefix="Name" field="name" errors={state.errors} />
+                    </div>
 
-                  <div>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="bg-input border-border"
-                    />
-                  </div>
+                    <div>
+                      <Input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                        className="bg-input border-border"
+                      />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
+                    </div>
 
-                  <div>
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="bg-input border-border resize-none"
-                    />
-                  </div>
+                    <div>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Your Message"
+                        required
+                        rows={5}
+                        className="bg-input border-border resize-none"
+                      />
+                      <ValidationError prefix="Message" field="message" errors={state.errors} />
+                    </div>
 
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                    Send Message
-                  </Button>
-                </form>
+                    <Button
+                      type="submit"
+                      disabled={state.submitting}
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground disabled:opacity-50 cursor-pointer"
+                    >
+                      {state.submitting ? "Sending..." : "Send Message"}
+                    </Button>
+                  </form>
+                )}
               </CardContent>
             </Card>
           </div>

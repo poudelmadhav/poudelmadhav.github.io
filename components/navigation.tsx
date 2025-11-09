@@ -40,7 +40,7 @@ export default function Navigation() {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-foreground hover:text-primary transition-colors duration-200"
+                className="text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
               >
                 {item}
               </button>
@@ -66,7 +66,7 @@ export default function Navigation() {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-left text-foreground hover:text-primary transition-colors duration-200"
+                  className="text-left text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
                 >
                   {item}
                 </button>
