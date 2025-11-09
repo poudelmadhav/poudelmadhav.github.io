@@ -36,7 +36,7 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {["About", "Experience", "Contact"].map((item) => (
+            {["About", "Experience"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -45,6 +45,20 @@ export default function Navigation() {
                 {item}
               </button>
             ))}
+            <a
+              href="https://blog.poudelmadhav.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+            >
+              Blog
+            </a>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+            >
+              Contact
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,7 +76,7 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
-              {["About", "Experience", "Contact"].map((item) => (
+              {["About", "Experience"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -71,6 +85,21 @@ export default function Navigation() {
                   {item}
                 </button>
               ))}
+              <a
+                href="https://blog.poudelmadhav.com.np"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-left text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </a>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-left text-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+              >
+                Contact
+              </button>
             </div>
           </div>
         )}
