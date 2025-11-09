@@ -236,8 +236,8 @@ export default function ExperienceSection() {
           </div>
 
               <p className="text-sm text-muted-foreground text-center mt-8 pt-6 border-t border-border">
-                <span className="inline-flex items-center gap-1">
-                  Note: The above companies are the branch of {" "}
+                <span className="inline-flex flex-wrap items-center justify-center gap-1">
+                  Note: The above companies are the branch of{" "}
                   <a
                     href="https://namespace.jp"
                     target="_blank"
