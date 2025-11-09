@@ -13,14 +13,17 @@ export const metadata: Metadata = {
     template: "%s | Madhav Paudel",
   },
   description:
-    "Madhav Paudel is a Principal Engineer at Chulo Solutions Pvt. Ltd., specializing in Ruby on Rails, JavaScript, web development, and cloud solutions. Expert in AWS, Google Cloud, PostgreSQL, MySQL, Git, CI/CD, and Agile methodologies.",
+    "Madhav Paudel is a Principal Engineer at Chulo Solutions Pvt. Ltd. (branch of Namespace Inc., Japan), specializing in Ruby on Rails, JavaScript, web development, and cloud solutions. Leading teams and delivering scalable applications with expertise in AWS, Google Cloud, PostgreSQL, Docker, and Agile methodologies.",
   keywords: [
     "Madhav Paudel",
     "Principal Engineer",
     "Software Developer",
     "Ruby on Rails Developer",
     "Full Stack Developer",
+    "Web Application Developer",
     "Chulo Solutions",
+    "Namespace Inc",
+    "Techrise",
     "Ruby",
     "Rails",
     "JavaScript",
@@ -30,19 +33,16 @@ export const metadata: Metadata = {
     "Tailwind CSS",
     "Web Development",
     "RESTful APIs",
+    "API Development",
     "PostgreSQL",
     "MySQL",
     "AWS",
     "Google Cloud",
     "GCP",
-    "Heroku",
     "Docker",
     "CI/CD",
     "GitHub",
     "Git",
-    "Jira",
-    "Scrum",
-    "Kanban",
     "Agile",
     "Project Management",
     "Team Leadership",
@@ -51,6 +51,8 @@ export const metadata: Metadata = {
     "Kathmandu",
     "Software Engineer",
     "Tech Lead",
+    "Code Reviews",
+    "Scalable Applications",
   ],
   authors: [{ name: "Madhav Paudel", url: "https://poudelmadhav.com.np" }],
   creator: "Madhav Paudel",
@@ -67,7 +69,7 @@ export const metadata: Metadata = {
     siteName: "Madhav Paudel - Portfolio",
     title: "Madhav Paudel - Principal Engineer | Ruby on Rails & Full Stack Developer",
     description:
-      "Principal Engineer at Chulo Solutions Pvt. Ltd., specializing in Ruby on Rails, JavaScript, RESTful APIs, cloud solutions (AWS, GCP), and leading Agile development teams.",
+      "Principal Engineer at Chulo Solutions (Namespace Inc., Japan) specializing in Ruby on Rails, JavaScript, RESTful APIs, cloud solutions (AWS, GCP), Docker, and leading Agile development teams. 7+ years of experience building scalable web applications.",
     images: [
       {
         url: "/software-engineer-headshot.png",
@@ -81,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Madhav Paudel - Principal Engineer | Ruby on Rails & Full Stack Developer",
     description:
-      "Principal Engineer at Chulo Solutions specializing in Ruby on Rails, JavaScript, cloud solutions, and Agile team leadership.",
+      "Principal Engineer at Chulo Solutions (Namespace Inc., Japan) with 7+ years experience in Ruby on Rails, JavaScript, cloud solutions, and Agile team leadership.",
     images: ["/software-engineer-headshot.png"],
     creator: "@poudelmadhav143",
   },
@@ -117,12 +119,21 @@ export default function RootLayout({
     worksFor: {
       "@type": "Organization",
       name: "Chulo Solutions Pvt. Ltd.",
+      parentOrganization: {
+        "@type": "Organization",
+        name: "Namespace Inc.",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "Japan",
+        },
+      },
     },
     description:
-      "Principal Engineer specializing in Ruby on Rails, JavaScript, web development, cloud solutions (AWS, GCP), and Agile team leadership",
+      "Principal Engineer with 7+ years of experience specializing in Ruby on Rails, JavaScript, web development, cloud solutions (AWS, GCP), Docker, and Agile team leadership. Leading development teams to deliver scalable web applications for international clients.",
     sameAs: [
       "https://linkedin.com/in/poudelmadhav143",
       "https://github.com/poudelmadhav",
+      "https://blog.poudelmadhav.com.np",
     ],
     knowsAbout: [
       "Ruby",
@@ -151,9 +162,13 @@ export default function RootLayout({
       "Project Management",
       "Team Leadership",
       "Mentoring",
+      "Code Reviews",
       "Problem Solving",
       "Software Engineering",
       "Cloud Computing",
+      "API Development",
+      "Scalable Applications",
+      "Database Design",
     ],
     address: {
       "@type": "PostalAddress",

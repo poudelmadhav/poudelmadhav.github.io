@@ -1,30 +1,38 @@
 import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const currentDate = new Date()
+
   return [
     {
       url: "https://poudelmadhav.com.np",
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 1,
     },
     {
       url: "https://poudelmadhav.com.np/#about",
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: "https://poudelmadhav.com.np/#experience",
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: "https://poudelmadhav.com.np/#contact",
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.7,
+    },
+    {
+      url: "https://blog.poudelmadhav.com.np",
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
   ]
 }
