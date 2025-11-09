@@ -21,10 +21,10 @@ export default function ParticlesBackground() {
             window.particlesJS("particles-js", {
               particles: {
                 number: {
-                  value: 80,
+                  value: 40,
                   density: {
                     enable: true,
-                    value_area: 800,
+                    value_area: 1000,
                   },
                 },
                 color: {
@@ -34,37 +34,37 @@ export default function ParticlesBackground() {
                   type: "circle",
                 },
                 opacity: {
-                  value: 0.9,
+                  value: 0.3,
                   random: true,
                   anim: {
                     enable: true,
-                    speed: 1,
-                    opacity_min: 0.5,
+                    speed: 0.5,
+                    opacity_min: 0.1,
                     sync: false,
                   },
                 },
                 size: {
-                  value: 6,
+                  value: 3,
                   random: true,
                   anim: {
                     enable: true,
-                    speed: 2,
-                    size_min: 2,
+                    speed: 1,
+                    size_min: 1,
                     sync: false,
                   },
                 },
                 line_linked: {
                   enable: true,
-                  distance: 150,
+                  distance: 120,
                   color: "#3b82f6",
-                  opacity: 0.8,
-                  width: 2,
+                  opacity: 0.2,
+                  width: 1,
                 },
                 move: {
                   enable: true,
-                  speed: 2,
+                  speed: 1,
                   direction: "none",
-                  random: false,
+                  random: true,
                   straight: false,
                   out_mode: "out",
                   bounce: false,
@@ -79,20 +79,26 @@ export default function ParticlesBackground() {
                   },
                   onclick: {
                     enable: true,
-                    mode: "repulse",
+                    mode: "bubble",
                   },
                   resize: true,
                 },
                 modes: {
                   grab: {
-                    distance: 200,
+                    distance: 150,
                     line_linked: {
-                      opacity: 1,
+                      opacity: 0.6,
                     },
                   },
+                  bubble: {
+                    distance: 200,
+                    size: 6,
+                    duration: 2,
+                    opacity: 0.5,
+                  },
                   repulse: {
-                    distance: 250,
-                    duration: 1,
+                    distance: 200,
+                    duration: 0.4,
                   },
                 },
               },
