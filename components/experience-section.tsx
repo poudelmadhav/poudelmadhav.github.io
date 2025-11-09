@@ -25,27 +25,6 @@ export default function ExperienceSection() {
     return () => observer.disconnect()
   }, [])
 
-  const skills = [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Python",
-    "Java",
-    "Spring Boot",
-    "PostgreSQL",
-    "MongoDB",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "Git",
-    "CI/CD",
-    "Microservices",
-    "GraphQL",
-    "REST APIs",
-  ]
-
   return (
     <section id="experience" ref={sectionRef} className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
@@ -115,25 +94,6 @@ export default function ExperienceSection() {
               </CardContent>
             </Card>
           </div>
-
-          <Card className="bg-card border-border shadow-lg">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-card-foreground text-center">Technical Skills</h3>
-
-              <div className="flex flex-wrap gap-3 justify-center">
-                {skills.map((skill, index) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="px-4 py-2 text-sm bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

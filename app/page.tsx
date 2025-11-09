@@ -10,12 +10,14 @@ export default function Home() {
   return (
     <main className="relative">
       <ParticlesBackground />
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <Navigation />
-        <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <ContactSection />
+      <div className="relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <Navigation />
+          <HeroSection />
+          <AboutSection />
+          <ExperienceSection />
+          <ContactSection />
+        </div>
         <Footer />
       </div>
     </main>
