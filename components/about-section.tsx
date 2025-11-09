@@ -27,14 +27,18 @@ export default function AboutSection() {
   }, [])
 
   const technicalSkills = [
+    { name: "Ruby", icon: "💎" },
+    { name: "Rails", icon: "🛤️" },
     { name: "JavaScript", icon: "🟨" },
-    { name: "TypeScript", icon: "🔷" },
-    { name: "React", icon: "⚛️" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "Python", icon: "🐍" },
+    { name: "HTML/CSS", icon: "🎨" },
+    { name: "PostgreSQL", icon: "🐘" },
+    { name: "MySQL", icon: "🗄️" },
     { name: "AWS", icon: "☁️" },
+    { name: "Google Cloud", icon: "🌐" },
     { name: "Docker", icon: "🐳" },
-    { name: "MongoDB", icon: "🍃" },
+    { name: "Tailwind", icon: "💨" },
+    { name: "Git/GitHub", icon: "🔧" },
+    { name: "CI/CD", icon: "🔄" },
   ]
 
   return (
@@ -67,7 +71,7 @@ export default function AboutSection() {
                     Technology, I specialize in creating scalable applications and innovative web development.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    My passion lies in mobile app development, web design, and building effective cloud solutions for
+                    My passion lies in web application development, modern UI/UX design, and building effective cloud solutions for
                     companies of all sizes. I believe in continuous learning and staying at the forefront of technology
                     trends to deliver exceptional results.
                   </p>
@@ -164,8 +168,8 @@ export default function AboutSection() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Smartphone className="h-6 w-6 text-primary" />
                 </div>
-                <h4 className="font-semibold text-card-foreground mb-2">Mobile Apps</h4>
-                <p className="text-sm text-muted-foreground">Cross-platform mobile solutions for iOS and Android</p>
+                <h4 className="font-semibold text-card-foreground mb-2">API Development</h4>
+                <p className="text-sm text-muted-foreground">RESTful APIs and backend services for scalable applications</p>
               </CardContent>
             </Card>
 
