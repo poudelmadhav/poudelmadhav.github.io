@@ -19,39 +19,39 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 py-20 sm:py-0">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`grid lg:grid-cols-2 gap-12 items-center z-10 transition-all duration-1000 ${
+          className={`grid lg:grid-cols-2 gap-8 sm:gap-12 items-center z-10 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 text-balance">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 text-balance">
               I'm <span className="gradient-text">Madhav Paudel</span>
             </h1>
 
-            <div className="mb-8">
-              <p className="text-lg md:text-xl lg:text-2xl text-primary font-semibold mb-2">Principal Engineer</p>
-              <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Software Developer & Team Leader</p>
+            <div className="mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-semibold mb-1 sm:mb-2">Principal Engineer</p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground">Software Developer & Team Leader</p>
             </div>
 
-            <p className="text-base md:text-lg text-muted-foreground mb-12 max-w-2xl text-pretty leading-relaxed mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-12 max-w-2xl text-pretty leading-relaxed mx-auto lg:mx-0">
               Passionate about creating innovative solutions and leading engineering teams to build scalable, efficient
               software systems that make a real impact.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
               <Button
                 size="lg"
                 onClick={scrollToAbout}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 pulse-on-hover w-full sm:w-auto"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-2 sm:py-3 pulse-on-hover w-full sm:w-auto text-sm sm:text-base"
               >
                 Explore My Work
               </Button>
             </div>
 
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button
                 variant="outline"
                 size="icon"
@@ -92,7 +92,7 @@ export default function HeroSection() {
                 <img
                   src="/software-engineer-headshot.png"
                   alt="Madhav Paudel"
-                  className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-background shadow-2xl object-cover"
+                  className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-background shadow-2xl object-cover"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function HeroSection() {
         </div>
 
         <div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+          className="hidden sm:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
           onClick={scrollToAbout}
         >
           <div className="flex flex-col items-center gap-2">
