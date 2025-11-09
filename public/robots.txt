@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow private pages (if any)
+# Disallow: /admin/
+
+Sitemap: https://poudelmadhav.com.np/sitemap.xml
